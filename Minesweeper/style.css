@@ -1,0 +1,38 @@
+/* htmlではclassは複数作れて、idは一つ */
+
+.column {
+  display: flex; /*いちいち改行しない*/
+  
+}
+
+.square {
+  width: 30px;
+  height: 30px;
+
+  border-style: inset; /*種類とかはググる*/
+  border-width: 2px;
+  border-color: gray;
+
+  cursor: pointer; /*ポインターが指に*/
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  font-size: 0;
+}
+
+.open {
+  background-color: lightgray;
+}
+
+.open.bomb {
+  background-color: crimson;
+}
+
+.flag::before {
+  content: "⛳️";
+  font-size: 1.5rem;
+}
